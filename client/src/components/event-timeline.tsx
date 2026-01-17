@@ -89,6 +89,7 @@ const events: Event[] = [
     time: "10:00 AM",
     location: "Gurudwara Chhevin Patshahi, Amritsar",
     description: "The Anand Karaj ceremony in the holy city.",
+    colorPalette: ["#B6400E", "#91340B", "#6D2608"],
     colorCode: "#F5F5DC", // Creamy white
     Icon: Castle,
   },
