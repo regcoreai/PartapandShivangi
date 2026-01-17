@@ -124,7 +124,7 @@ export default function WeddingPage() {
 
           <InformalMoments images={[
             moment1, moment2, moment3, moment4, 
-            moment5, moment6, moment7, moment8, moment9,
+            moment5, moment8, moment9,
             moment10, moment11, moment12
           ]} />
 
