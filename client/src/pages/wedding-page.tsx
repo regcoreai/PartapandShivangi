@@ -125,7 +125,7 @@ export default function WeddingPage() {
           <InformalMoments images={[
             moment1, moment2, moment3, moment4, 
             moment5, moment6, moment7, moment8, moment9,
-            moment10, moment11, moment12, moment13, moment14
+            moment10, moment11, moment12
           ]} />
 
           <footer className="py-12 text-center text-muted-foreground text-sm border-t border-border/40 bg-white/50 backdrop-blur-sm">

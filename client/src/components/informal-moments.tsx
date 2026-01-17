@@ -55,7 +55,7 @@ export function InformalMoments({ images }: InformalMomentsProps) {
                     />
                   </div>
                   <div className="pt-1.5 pb-0.5 text-center font-heading text-xs md:text-sm text-gray-400 italic">
-                    {["Just us", "Together", "Adventures", "Always", "Smiles", "Forever", "Moments", "Love", "Together"][index % 9]}
+                    {["Just us", "Together", "Adventures", "Always", "Smiles", "Love", "Together"][index % 7]}
                   </div>
                 </CardContent>
               </Card>
