@@ -10,6 +10,7 @@ import { useEffect } from "react";
 // Asset imports
 import heroImage from "@assets/12854145-28e3-4042-a37b-0e4a844584b4_1764218627020.JPG";
 import secondaryImage from "@assets/IMG_5565_1764218631686.JPG";
+import journeyImage from "@assets/WhatsApp_Image_2026-01-15_at_3.17.41_PM_1768662450125.jpeg";
 import patternImage from "@assets/generated_images/subtle_indian_luxury_floral_background_pattern.png";
 import moment1 from "@assets/WhatsApp_Image_2026-01-15_at_3.27.53_PM_1768662032810.jpeg";
 import moment2 from "@assets/WhatsApp_Image_2026-01-15_at_3.28.01_PM_1768662032810.jpeg";
@@ -108,6 +109,7 @@ export default function WeddingPage() {
           <GallerySection 
             image1={heroImage}
             image2={secondaryImage}
+            journeyImage={journeyImage}
             pattern={patternImage}
           />
 

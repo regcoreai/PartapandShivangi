@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 interface GallerySectionProps {
   image1: string;
   image2: string;
+  journeyImage: string;
   pattern: string;
 }
 
-export function GallerySection({ image1, image2, pattern }: GallerySectionProps) {
+export function GallerySection({ image1, image2, journeyImage, pattern }: GallerySectionProps) {
   return (
     <section className="py-24 relative overflow-hidden bg-stone-50">
       {/* Background Pattern Overlay */}
@@ -16,7 +17,7 @@ export function GallerySection({ image1, image2, pattern }: GallerySectionProps)
       />
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center mb-24">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -59,6 +60,52 @@ export function GallerySection({ image1, image2, pattern }: GallerySectionProps)
                 "Together is a beautiful place to be."
                </p>
             </div>
+          </motion.div>
+        </div>
+
+        {/* New Elegant Journey Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="order-2 md:order-1 space-y-6 text-center md:text-right"
+          >
+            <div className="inline-block px-4 py-1 bg-primary/5 rounded-full text-primary text-xs uppercase tracking-widest font-semibold mb-2">
+              The Celebration
+            </div>
+            <h3 className="font-heading text-4xl md:text-5xl text-primary">
+              A New Chapter
+            </h3>
+            <p className="font-sans text-lg leading-relaxed text-muted-foreground italic">
+              "Love is not about how many days, months, or years you have been together. Love is about how much you love each other every single day."
+            </p>
+            <p className="font-sans text-muted-foreground/80">
+              As we prepare to take our vows, we reflect on the moments that brought us here—the laughter shared, the dreams built, and the love that continues to grow. We are honored to have you by our side as we begin this sacred union.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="order-1 md:order-2 relative"
+          >
+            <div className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl relative group bg-white p-2">
+              <img 
+                src={journeyImage} 
+                alt="Elegant Journey Moment" 
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+            </div>
+            {/* Decorative frame overlap */}
+            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary/5 -z-10 rounded-full blur-3xl opacity-50" />
+            <div className="absolute -top-8 -right-8 w-48 h-48 bg-gold/5 -z-10 rounded-full blur-3xl opacity-50" />
           </motion.div>
         </div>
       </div>
