@@ -31,7 +31,7 @@ export function GallerySection({ image1, image2, journeyImage, pattern }: Galler
                 src={image2} 
                 alt="Couple Portrait" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
+                fetchPriority="high"
                 decoding="async"
               />
             </div>
@@ -98,7 +98,7 @@ export function GallerySection({ image1, image2, journeyImage, pattern }: Galler
                 src={journeyImage} 
                 alt="Elegant Journey Moment" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                loading="lazy"
+                fetchPriority="high"
                 decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />

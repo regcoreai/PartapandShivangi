@@ -13,7 +13,7 @@ export function WeddingHero({ imageSrc }: WeddingHeroProps) {
           src={imageSrc}
           alt="Partap & Shivangi"
           className="w-full h-full object-cover object-top"
-          loading="eager"
+          fetchPriority="high"
           decoding="async"
         />
         <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
