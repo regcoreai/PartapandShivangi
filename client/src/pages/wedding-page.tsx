@@ -11,16 +11,20 @@ import { useEffect } from "react";
 import heroImage from "@assets/12854145-28e3-4042-a37b-0e4a844584b4_1764218627020.JPG";
 import secondaryImage from "@assets/IMG_5565_1764218631686.JPG";
 import patternImage from "@assets/generated_images/subtle_indian_luxury_floral_background_pattern.png";
-import moment1 from "@assets/IMG_0929_1764219353474.JPG";
-import moment2 from "@assets/IMG_5763_1764219353474.JPG";
-// New converted imports
-import moment3 from "@assets/IMG_3068_1764219932730.jpg";
-import moment4 from "@assets/IMG_6292_1764219932730.jpg";
-import moment5 from "@assets/IMG_5358_2_1764219693898.jpg";
-import moment6 from "@assets/IMG_5497_1764219693898.jpg";
-import moment7 from "@assets/IMG_5826_1764219693898.jpg";
-import moment8 from "@assets/IMG_5942_1764219693898.jpg";
-import moment9 from "@assets/IMG_6064_1764219693898.jpg";
+import moment1 from "@assets/WhatsApp_Image_2026-01-15_at_3.27.53_PM_1768662032810.jpeg";
+import moment2 from "@assets/WhatsApp_Image_2026-01-15_at_3.28.01_PM_1768662032810.jpeg";
+import moment3 from "@assets/WhatsApp_Image_2026-01-15_at_3.28.26_PM_1768662032810.jpeg";
+import moment4 from "@assets/WhatsApp_Image_2026-01-15_at_3.28.36_PM_1768662032810.jpeg";
+import moment5 from "@assets/WhatsApp_Image_2026-01-15_at_3.19.07_PM_1768662032810.jpeg";
+import moment6 from "@assets/IMG_0929_1764219353474.JPG";
+import moment7 from "@assets/IMG_5763_1764219353474.JPG";
+import moment8 from "@assets/IMG_3068_1764219932730.jpg";
+import moment9 from "@assets/IMG_6292_1764219932730.jpg";
+import moment10 from "@assets/IMG_5358_2_1764219693898.jpg";
+import moment11 from "@assets/IMG_5497_1764219693898.jpg";
+import moment12 from "@assets/IMG_5826_1764219693898.jpg";
+import moment13 from "@assets/IMG_5942_1764219693898.jpg";
+import moment14 from "@assets/IMG_6064_1764219693898.jpg";
 
 export default function WeddingPage() {
   useEffect(() => {
@@ -120,7 +124,8 @@ export default function WeddingPage() {
 
           <InformalMoments images={[
             moment1, moment2, moment3, moment4, 
-            moment5, moment6, moment7, moment8, moment9
+            moment5, moment6, moment7, moment8, moment9,
+            moment10, moment11, moment12, moment13, moment14
           ]} />
 
           <footer className="py-12 text-center text-muted-foreground text-sm border-t border-border/40 bg-white/50 backdrop-blur-sm">

@@ -6,8 +6,8 @@ interface InformalMomentsProps {
 }
 
 export function InformalMoments({ images }: InformalMomentsProps) {
-  // Use images directly without duplication and remove 3 cards
-  const displayImages = images.slice(0, images.length - 3);
+  // Use all provided images
+  const displayImages = images;
 
   return (
     <section className="py-32 bg-stone-900 relative overflow-hidden">
@@ -55,7 +55,7 @@ export function InformalMoments({ images }: InformalMomentsProps) {
                     />
                   </div>
                   <div className="pt-1.5 pb-0.5 text-center font-heading text-xs md:text-sm text-gray-400 italic">
-                    {["Just us", "Vibe Check", "Adventures", "Always", "Smiles", "Forever", "Moments", "Love", "Together"][index % 9]}
+                    {["Just us", "Together", "Adventures", "Always", "Smiles", "Forever", "Moments", "Love", "Together"][index % 9]}
                   </div>
                 </CardContent>
               </Card>
