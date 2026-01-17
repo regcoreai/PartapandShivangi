@@ -33,6 +33,7 @@ export function GallerySection({ image1, image2, journeyImage, pattern }: Galler
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 fetchPriority="high"
                 decoding="async"
+                loading="eager"
               />
             </div>
             {/* Decorative elements */}
@@ -100,6 +101,7 @@ export function GallerySection({ image1, image2, journeyImage, pattern }: Galler
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 fetchPriority="high"
                 decoding="async"
+                loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>

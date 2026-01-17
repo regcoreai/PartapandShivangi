@@ -52,6 +52,7 @@ export function InformalMoments({ images }: InformalMomentsProps) {
                       className="w-full h-full object-cover filter sepia-[0.05] contrast-105"
                       loading="lazy"
                       decoding="async"
+                      fetchPriority={index < 3 ? "high" : "low"}
                     />
                   </div>
                   <div className="pt-1.5 pb-0.5 text-center font-heading text-xs md:text-sm text-gray-400 italic">
