@@ -1,0 +1,38 @@
+0 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To https://github.com/regcoreai/PartapandShivangi
+ ! [remote rejected] wedding -> wedding (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/regcoreai/PartapandShivangi'
+~/workspace/attached_assets$ git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch attached_assets/IMG_2450_1764219353474.MOV' --prune-empty --tag-name-filter cat -- --all
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+     rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+     alternative filtering tool such as 'git filter-repo'
+     (https://github.com/newren/git-filter-repo/) instead.  See the
+     filter-branch manual page for more details; to squelch this warning,
+     set FILTER_BRANCH_SQUELCH_WARNING=1.
+Proceeding with filter-branch...
+
+You need to run this command from the toplevel of the working tree.
+~/workspace/attached_assets$ git gc --prune=now --aggressive
+Enumerating objects: 228, done.
+Counting objects: 100% (228/228), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (222/222), done.
+Writing objects: 100% (228/228), done.
+Total 228 (delta 101), reused 125 (delta 0), pack-reused 0 (from 0)
+~/workspace/attached_assets$ git push origin wedding --force
+Enumerating objects: 211, done.
+Counting objects: 100% (211/211), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (134/134), done.
+Writing objects: 100% (211/211), 203.84 MiB | 5.69 MiB/s, done.
+Total 211 (delta 87), reused 193 (delta 71), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (87/87), done.
+remote: error: Trace: d6650673f6076bbf16d17f43e4ef62ad51807d86b1e9be133fef03e2c2654e98
+remote: error: See https://gh.io/lfs for more information.
+remote: error: File attached_assets/IMG_2450_1764219353474.MOV is 160.60 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+To https://github.com/regcoreai/PartapandShivangi
+ ! [remote rejected] wedding -> wedding (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/regcoreai/PartapandShivangi'
+~/workspace/attached_assets$ 
